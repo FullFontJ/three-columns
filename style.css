@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root{
+    --white:rgb(242, 242, 242);
+    --color-sedans:rgb(227, 136, 38);
+    --color-luxury:rgb(0, 66, 65);    
+    --color-twhite-lithg:rgba(255, 255, 255, 0.75);
+    --color-suvs:rgb(0, 105, 112);
+    --font-Big:'Big Shoulders Display', 'cursive';
+    --font-Lexend: 'Lexend Deca','sans-serif';
+}
+
+body{
+    background-color: var(--color-twhite-lithg);
+}
+
+.container{
+    height: 340px;
+    width: 720px;
+    position: relative;
+    margin: auto;
+    top: 130px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    height: 100%;
+    width: 240px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.back-sedans{
+    background-color: var(--color-sedans);
+    border-radius: 10px 0 0 10px;
+}
+
+.back-suvs{
+    background-color: var(--color-suvs);
+}
+
+.back-luxury{
+    background-color: var(--color-luxury);
+    border-radius: 0 10px 10px 0;
+}
+
+.card-img{
+    height: 40px;
+    width: 55px;
+}
+
+.card > div h1{
+    color: var(--white);
+    font-family: var(--font-Big);
+    font-size: 2em;
+}
+
+.card > div p{
+    color: var(--color-twhite-lithg);
+    font-family: var(--font-Lexend);
+    font-size: 0.75em;
+}
+
+.card button{
+    height: 40px;
+    width: 130px;
+    border-radius: 20px;
+    border: 1px solid var(--white);
+    font-family: var(--font-Lexend);
+    font-size: 0.9em;
+}
+
+.hover-sedans{
+    color: var(--color-sedans);
+}
+
+.hover-suvs{
+    color: var(--color-suvs);
+}
+
+.hover-luxury{
+    color: var(--color-luxury);
+}
+
+.hover-sedans:hover{
+    background-color: var(--color-sedans);
+    color: var(--white);
+}
+
+.hover-suvs:hover{
+    background-color: var(--color-suvs);
+    color: var(--white);
+}
+
+.hover-luxury:hover{
+    background-color: var(--color-luxury);
+    color: var(--white);
+}
